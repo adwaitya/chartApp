@@ -6,6 +6,7 @@ Before run this app please run this below command
  
 npm install
 bower install
+Note : Please use version 2.X when u install bower install 
 
 for running the app 
 
