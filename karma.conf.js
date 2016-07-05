@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-    'chartApp/lib/jquery/jquery.js',
+    
       'chartApp/lib/angular/angular.js',
       'chartApp/lib/angular-mocks/angular-mocks.js',
 	  'chartApp/js/*.js',
