@@ -8,32 +8,36 @@
 			var service = {};
 
 			service.getChartData = getChartData;
-
+			
 			return service;
 
 
 		}
 
-	var getChartData = {
+	
+      	var getChartData = {
          label: ['January','February','March','April','May','June','July'],
-         data: [[5,10,6,7,2,45,23],[52,120,26,72,22,12,33]],
+         data:[
+				    [65, -59, 80, 81, -56, 55, -40],
+				    [28, 48, -40, 19, 86, 27, 90]
+				  ],
          series: ["2015","2016"],
-         colors: [{fillColor:["#FF0000", "#00FF00", "#0000FF", "#00FFFF", "#FFFF00","#00ADF9", "#DCDCDC", "#46BFBD"]}],
-         options: {barShowStroke : false},
-         datasetOverride:[
-						      {
-						        label: "Bar chart",
-						        borderWidth: 1,
-						        type: 'bar'
-						      },
-						      {
-						        label: "Line chart",
-						        borderWidth: 3,
-						        hoverBackgroundColor: "rgba(255,99,132,0.4)",
-						        hoverBorderColor: "rgba(255,99,132,1)",
-						        type: 'line'
-						      }
-				]
+         colors: ['#45b7cd', '#ff6384', '#ff8e72'],
+        
+         datasetOverride :[
+				    {
+				      label: 'Series A',
+				      borderWidth: 1,
+				      type: 'bar'
+				    },
+				    {
+				      label: ' Series B',
+				      borderWidth: 3,
+				      hoverBackgroundColor: 'rgba(255,99,132,0.4)',
+				      hoverBorderColor: 'rgba(255,99,132,1)',
+				      type: 'line'
+				    }
+				  ]	
       };
                   
 })();
