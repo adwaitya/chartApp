@@ -17,7 +17,8 @@
       </div>
 
       <div class="panel-body">
-        <canvas id="base" dataset-override="datasetOverride" class="chart chart-line" chart-data="Chart.chartData.data" chart-legend="true" chart-labels="Chart.chartData.label" chart-series="Chart.chartData.series" chart-dataset-override="Chart.chartData.datasetOverride"  chart-colours="Chart.chartData.colours" chart-options="Chart.chartData.options"></canvas>
+        <canvas class="chart chart-bar" chart-data="Chart.data" chart-labels="Chart.labels"
+                  chart-colors="Chart.colors" chart-legend="true" chart-dataset-override="Chart.datasetOverride"></canvas>
       </div>
     </div>
 		</div>
@@ -25,13 +26,17 @@
 </div>
 
 
-<script type="text/javascript" src="lib/Chart.js/Chart.js"></script>
+<script data-require="jquery" data-semver="2.1.4" src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script type="text/javascript" src="lib/angular/angular.min.js"></script>
-<script type="text/javascript" src="lib/angular-chart.js/dist/angular-chart.js"></script>
+<script type="text/javascript" src="lib/chart.js/dist/Chart.min.js"></script>
 
+
+<script src="http://jtblin.github.io/angular-chart.js/dist/angular-chart.js"></script>
 <script type="text/javascript" src="js/app.module.js"></script>
 <script type="text/javascript" src="js/controllers/chart.controller.js"></script>
-
+<script type="text/javascript" src="js/controllers/overrideController.js"></script>
+<script type="text/javascript" src="js/controllers/chart1.controller.js"></script>
 <script type="text/javascript" src="js/services/chart.service.js"></script>
+
 </body>
 </html>
