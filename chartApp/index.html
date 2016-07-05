@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Chart App</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="lib/angular-chart.js/dist/angular-chart.css">
+</head>
+<body ng-app="chartApp">
+<div class="container">
+	<div class="row" ng-controller="ChartController as Chart">
+		<div class="col-sm-9 col-sm-offset-1">
+			<h3>{{Chart.title}}</h3>
+			<div class="panel panel-default">
+      <div class="panel-heading">
+        Chart
+      </div>
+
+      <div class="panel-body">
+        <canvas id="base" dataset-override="datasetOverride" class="chart chart-line" chart-data="Chart.chartData.data" chart-legend="true" chart-labels="Chart.chartData.label" chart-series="Chart.chartData.series" chart-dataset-override="Chart.chartData.datasetOverride"  chart-colours="Chart.chartData.colours" chart-options="Chart.chartData.options"></canvas>
+      </div>
+    </div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="lib/Chart.js/Chart.js"></script>
+<script type="text/javascript" src="lib/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/angular-chart.js/dist/angular-chart.js"></script>
+
+<script type="text/javascript" src="js/app.module.js"></script>
+<script type="text/javascript" src="js/controllers/chart.controller.js"></script>
+
+<script type="text/javascript" src="js/services/chart.service.js"></script>
+</body>
+</html>
